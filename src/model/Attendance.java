@@ -9,13 +9,16 @@ public class Attendance implements Recordable{
     private LocalDateTime checkIn;
     private LocalDateTime checkOut;
 
-    Attendance(int employeeID,String employeeName,LocalDateTime checkIn,LocalDateTime checkOut){
+    public Attendance(int employeeID,String employeeName,LocalDateTime checkIn,LocalDateTime checkOut){
         this.employeeID = employeeID;
         this.employeeName = employeeName;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
 
+    public void setCheckOut(LocalDateTime checkOut){
+        this.checkOut = checkOut;
+    }
     public int getEmployeeID(){ return employeeID;}
     public String getEmployeeName(){ return employeeName;}
     public LocalDateTime getCheckInTime(){ return checkIn;}
