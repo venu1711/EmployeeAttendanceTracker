@@ -105,4 +105,23 @@ public class AttendanceService {
             System.out.println("Failed to save to file.");
         }
     }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+    public List<Attendance> getAttendanceRecord() {
+        return attendanceRecord;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        AttendanceService.employees = employees;
+        saveToFile();
+    }
+    public void setAttendanceRecord(List<Attendance> attendanceRecord) {
+        AttendanceService.attendanceRecord = attendanceRecord;
+        saveToFile();
+    }
+    public String getFileName() {
+        return fileName;
+    }
 }

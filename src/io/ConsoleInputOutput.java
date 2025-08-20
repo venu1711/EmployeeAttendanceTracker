@@ -119,4 +119,5 @@ public class ConsoleInputOutput {
         controller.getCheckOut(id);
         System.out.println("Employee Checked Out");
     }
+
 }

@@ -26,4 +26,22 @@ public class AttendanceController {
         return service.logCheckOut(id);
     }
 
+    public Employee findEmployeeById(int id){
+        return service.findEmployeeById(id);
+    }
+    public void loadFromFile() {
+        service.loadFromFile();
+    }
+    public void saveToFile() {
+        service.saveToFile();
+    }
+    public void clearData() {
+        service.clearData();
+    }
+    public void printAllEmployees() {
+        service.printAllEmployees();
+    }
+    public void printAttendanceRecord() {
+        service.printAttendanceRecord();
+    }
 }
