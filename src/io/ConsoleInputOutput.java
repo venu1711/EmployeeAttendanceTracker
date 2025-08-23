@@ -120,4 +120,20 @@ public class ConsoleInputOutput {
         System.out.println("Employee Checked Out");
     }
 
+    public void loadData(){
+        controller.loadFromFile();
+    }
+    public void saveData(){
+        controller.saveToFile();
+    }
+    public void clearData() {
+        controller.clearData();
+    }
+    public void printAllEmployees() {
+        controller.printAllEmployees();
+    }
+    public void printAttendanceRecord() {
+        controller.printAttendanceRecord();
+    }
+
 }
